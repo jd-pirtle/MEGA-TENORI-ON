@@ -1,0 +1,17 @@
+****************************************
+MEGA TENORI-ON
+JD PIRTLE
+2012
+****************************************
+
+
+**ABOUT******************************
+MEGA TENORI-ON is an interactive multitouch application written with Processing and Supercollider for the Cyber-Commons wall at the Electronic Visualization Lab at the University of Illinois at Chicago.  It enables users to select between either a major pentatonic scale (with three "tones") or samples of a large drum kit.
+
+
+**HARDWARE************************
+This was designed to run on a matrix of (18) displays running on a single Linux machine, with a PQ Labs touch overlay (which is controlled by a separate PC).  The resolution of that display is 8160 x 2304.  The Processing sketch sends OSC messages to Supercollider running on a Mac Pro that addresses (7) speakers attached to an RME Fireface 800.
+
+
+**USAGE******************************
+Since the environment MEGA TENORI-ON was designed for is fairly esoteric, I don't imagine folks will want to grab this project and use as-is.  However, it wouldn't be hard to change some things around make it work in other environments.  For example, any instance of touchDown() etc. from the MyTouchListener class can be replaced with mousePressed().  In fact, anything related to MyTouchListener or the OmicronAPI are specifically to get Processing to work on aforementioned Cyber-Commons wall and aren't necessary for other uses.
